@@ -1,19 +1,18 @@
 ---
 galaxy_info:
   role_name: keycloak
-  author: andrelohmann
-  description: ansible galaxy role to install keycloak
-  company: smartformer UG
+  author: Zhang Ran
+  description: ansible galaxy role to install keycloak bassed on andrelohmann's script
 
   license: MIT
 
   min_ansible_version: 2.7
 
   platforms:
-    - name: Ubuntu
+    - name: Amazon Linux
       versions:
-      - xenial
-      - bionic
+      - 2
+
 
   galaxy_tags:
   - keycloak
