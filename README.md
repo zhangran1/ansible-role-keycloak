@@ -48,5 +48,5 @@ MIT
 
 Original Author Information
 ------------------
+The scripts were modified based on andrelohmann.keycloakrole and the original author is https://github.com/andrelohmann
 
-https://github.com/andrelohmann
