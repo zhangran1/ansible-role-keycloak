@@ -8,12 +8,14 @@ Use this role to install keycloak.
 Requirements
 ------------
 
-This role requires ubuntu.
+This role requires Redhat Enterprise Linux 8.
+
+Keycloak 16.1.0 shall be placed under */data/keycloak* directory.
 
 Dependencies
 ------------
 
-This role depends on andrelohmann.percona_mysql and andrelohmann.zulu_openjdk
+
 
 Role Variables
 --------------
@@ -21,7 +23,7 @@ Role Variables
 The default set of variables defines the settings, keycloak will be installed with
 
     keycloak_version: 16.1.0
-    keycloak_dir: /var/lib/keycloak
+    keycloak_dir: /data/keycloak
     keycloak_archive: keycloak-{{ keycloak_version }}.tar.gz
     keycloak_url: http://downloads.jboss.org/keycloak/{{ keycloak_version }}/{{keycloak_archive }}
     keycloak_jboss_home: "{{ keycloak_dir }}/keycloak-{{ keycloak_version }}"
@@ -44,7 +46,7 @@ License
 
 MIT
 
-Author Information
+Original Author Information
 ------------------
 
 https://github.com/andrelohmann
